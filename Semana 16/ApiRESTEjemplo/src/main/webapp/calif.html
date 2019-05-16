@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Peliculas</title>
+	<meta content="text/html; charset=UTF-8">
+	<!-- Importando el JS -->
+	<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
+	<script type="text/javascript" src="js/dto.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/func2.js"></script>
+</head>
+
+<body>
+	<h2>Cursos</h2>
+	<p> <input type="text" id="txt_nombre_curso"> </p>
+	<p> <button id="btn_inscribir_curso">INSCRIBIR</button> </p>
+	
+	
+	<div id="lista_cursos">
+		<ul></ul>
+	</div>
+	
+	<h2>Estudiante</h2>
+	<p> <input id="txt_nombre_estudiante" type="text"> </p>
+	<p> <input id="txt_apellido_estudiante" type="text"> </p>
+	<p> <input id="txt_codigo_estudiante" type="text"> </p>
+	<p> <input id="txt_nota_estudiante" type="number"> </p> 
+	<p> <button id="btn_inscribir_estudiante">INSCRIBIR</button>
+	
+	
+</body>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAA2e0G24kAjs3dSidulbw46DQ63RWqfkw",
+    authDomain: "camara-4a96c.firebaseapp.com",
+    databaseURL: "https://camara-4a96c.firebaseio.com",
+    projectId: "camara-4a96c",
+    storageBucket: "camara-4a96c.appspot.com",
+    messagingSenderId: "275876785449",
+    appId: "1:275876785449:web:26cda28dfc62c84d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+</html>
